@@ -40,7 +40,7 @@ trait ImplementsActionColumn
                         'column' => $column,
                     ];
 
-                    return view('livewire-tables-helper.action-column', $viewData);
+                    return view('livewire-tables-helper::livewire-tables-helper.action-column', $viewData);
                 })
                 ->html(),
         ];

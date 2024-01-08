@@ -10,6 +10,7 @@ class LaravelLivewireTablesHelperServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
-        $package->name('laravel-livewire-tables-helper');
+        $package->name('laravel-livewire-tables-helper')
+            ->hasViews();
     }
 }
