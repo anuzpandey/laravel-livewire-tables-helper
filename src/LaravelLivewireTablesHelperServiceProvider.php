@@ -2,9 +2,9 @@
 
 namespace AnuzPandey\LaravelLivewireTablesHelper;
 
+use AnuzPandey\LaravelLivewireTablesHelper\Commands\LaravelLivewireTablesHelperCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use AnuzPandey\LaravelLivewireTablesHelper\Commands\LaravelLivewireTablesHelperCommand;
 
 class LaravelLivewireTablesHelperServiceProvider extends PackageServiceProvider
 {

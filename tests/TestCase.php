@@ -2,9 +2,9 @@
 
 namespace AnuzPandey\LaravelLivewireTablesHelper\Tests;
 
+use AnuzPandey\LaravelLivewireTablesHelper\LaravelLivewireTablesHelperServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use AnuzPandey\LaravelLivewireTablesHelper\LaravelLivewireTablesHelperServiceProvider;
 
 class TestCase extends Orchestra
 {
