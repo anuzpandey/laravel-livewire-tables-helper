@@ -7,6 +7,7 @@ use Rappasoft\LaravelLivewireTables\Views\Column;
 trait HasSerialNumberColumn
 {
     protected int $index = 0;
+
     protected string $serialNumberColumnLabel = 'SN';
 
     public function prependColumns(): array
