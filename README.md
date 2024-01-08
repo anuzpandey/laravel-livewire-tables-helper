@@ -19,6 +19,18 @@ composer require anuzpandey/laravel-livewire-tables-helper
 
 ## Usage
 
+- Serial Number Column
+This trait will add a serial number column to your table. The Trait utilize the `prependColumns` method from the `rappasoft/laravel-livewire-tables` package.
+You can use this trait in your table component like this:
+```php
+use AnuzPandey\LaravelLivewireTablesHelper\Traits\HasSerialNumberColumn;
+
+class UserTable extends Component
+{
+    use HasSerialNumberColumn;
+}
+```
+
 ## Testing
 
 ```bash
