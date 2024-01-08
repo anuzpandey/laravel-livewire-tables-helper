@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace AnuzPandey\LaravelLivewireTablesHelper\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelLivewireTablesHelperCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-livewire-tables-helper';
 
     public $description = 'My command';
 
