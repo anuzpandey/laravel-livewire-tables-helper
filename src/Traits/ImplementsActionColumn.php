@@ -32,13 +32,16 @@ trait ImplementsActionColumn
 
                     /**
                      * Prepend Buttons Array Keys:
-                     * - permission
-                     * - route
-                     * - label
-                     * - icon
-                     * - class (optional)
+                     * -> permission|route|label|icon|class
                      */
                     $prependButtons = $this->actionColumnAttributes['prependButtons'] ?? null;
+
+                    if ($prependButtons) {
+                        foreach ($prependButtons as $key => $button) {
+                            $prependButtons[$key]['route'] = route($button['route'], $row);
+                            $prependButtons[$key]['class'] = Arr::has($button, 'class') ? $button['class'] : 'btn-light-primary';
+                        }
+                    }
 
                     $viewData = [
                         'row' => $row,
