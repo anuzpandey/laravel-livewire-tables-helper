@@ -31,14 +31,12 @@ trait ImplementsActionColumn
                     $enablePermission = $this->actionColumnAttributes['enablePermission'] ?? false;
 
                     /**
-                     * Prepend Button Signatures:
-                     * [
-                     *    'permission' => '...',
-                     *    'route' => '...',
-                     *    'label' => '...',
-                     *    'icon' => '...',
-                     *    'class' => '...',
-                     * ]
+                     * Prepend Buttons Array Keys:
+                     * - permission
+                     * - route
+                     * - label
+                     * - icon
+                     * - class (optional)
                      */
                     $prependButtons = $this->actionColumnAttributes['prependButtons'] ?? null;
 
