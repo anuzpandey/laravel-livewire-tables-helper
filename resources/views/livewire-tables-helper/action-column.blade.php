@@ -1,16 +1,3 @@
-@props([
-    'updatePermission' => NULL,
-    'deletePermission' => NULL,
-    'viewPermission' => NULL,
-    'extras' => NULL,
-    'editRoute' => NULL,
-    'deleteRoute' => NULL,
-    'showRoute' => NULL,
-    'permissions' => TRUE,
-    'showTarget' => '_self',
-    'prependButtons' => NULL,
-])
-
 @if($permissions)
     <div class="d-inline-flex gap-2">
 
@@ -20,7 +7,7 @@
                 <a
                     href="{{ $button['route'] }}"
                     type="button"
-                    class="btn btn-icon btn-warning btn-sm"
+                    class="btn btn-icon {{ $button['class'] ?: 'btn-warning' }} btn-sm"
                     data-bs-toggle="tooltip"
                     data-bs-placement="top"
                     data-bs-original-title="{{ $button['label'] }}"

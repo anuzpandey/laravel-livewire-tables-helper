@@ -2,7 +2,6 @@
 
 namespace AnuzPandey\LaravelLivewireTablesHelper\Livewire;
 
-
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -19,6 +18,7 @@ class SwitchBooleanColumn extends Column
     use BooleanColumnConfiguration, BooleanColumnHelpers, HasCallback;
 
     protected string $type = 'icons';
+
     protected bool $successValue = true;
 
     public function getContents(Model $row): null|string|HtmlString|DataTableConfigurationException|Application|Factory|View

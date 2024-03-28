@@ -28,7 +28,23 @@ trait ImplementsActionColumn
                         : null;
                     $showTarget = $this->actionColumnAttributes['showTarget'] ?? '_blank';
 
+                    $enablePermission = $this->actionColumnAttributes['enablePermission'] ?? false;
+
+                    /**
+                     * Prepend Button Signatures:
+                     * [
+                     *    'permission' => '...',
+                     *    'route' => '...',
+                     *    'label' => '...',
+                     *    'icon' => '...',
+                     *    'class' => '...',
+                     * ]
+                     */
+                    $prependButtons = $this->actionColumnAttributes['prependButtons'] ?? null;
+
                     $viewData = [
+                        'row' => $row,
+                        'column' => $column,
                         'updatePermission' => $updatePermission,
                         'editRoute' => $editRoute,
                         'deletePermission' => $deletePermission,
@@ -36,8 +52,8 @@ trait ImplementsActionColumn
                         'viewPermission' => $viewPermission,
                         'showRoute' => $showRoute,
                         'showTarget' => $showTarget,
-                        'row' => $row,
-                        'column' => $column,
+                        'enablePermission' => $enablePermission,
+                        'prependButtons' => $prependButtons,
                     ];
 
                     return view('livewire-tables-helper::livewire-tables-helper.action-column', $viewData);
