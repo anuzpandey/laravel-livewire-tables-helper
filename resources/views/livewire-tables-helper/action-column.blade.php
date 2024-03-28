@@ -1,4 +1,4 @@
-@if($permissions)
+@if($enablePermission)
     <div class="d-inline-flex gap-2">
 
         @if($prependButtons)
