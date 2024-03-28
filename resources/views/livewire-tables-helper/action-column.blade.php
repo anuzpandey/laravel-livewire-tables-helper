@@ -19,7 +19,6 @@
             @endforeach
         @endif
 
-
         @authorize($viewPermission)
         @if($showRoute)
             <a
@@ -77,13 +76,14 @@
             <a
                 href="{{ $showRoute }}"
                 type="button"
-                class="btn btn-icon btn-warning btn-sm"
+                class="btn btn-icon btn-light-primary btn-sm"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
                 data-bs-original-title="View"
                 aria-label="View"
+                target="{{ $showTarget }}"
             >
-                <i class="las la-eye align-middle fs-4"></i>
+                <i class="ki-outline ki-laptop align-middle fs-4"></i>
             </a>
         @endif
 
@@ -91,13 +91,13 @@
             <a
                 href="{{ $editRoute }}"
                 type="button"
-                class="btn btn-icon btn-success btn-sm"
+                class="btn btn-icon btn-light-primary btn-sm"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
                 data-bs-original-title="Edit"
                 aria-label="Edit"
             >
-                <i class="las la-pen align-middle fs-4"></i>
+                <i class="ki-outline ki-pencil align-middle fs-4"></i>
             </a>
         @endif
 
@@ -107,13 +107,13 @@
                 id="delete-btn"
                 data-id="{{ $row->id }}"
                 type="button"
-                class="btn btn-icon btn-danger btn-sm"
+                class="btn btn-icon btn-light-primary btn-sm"
                 data-bs-toggle="tooltip"
                 data-bs-placement="top"
                 data-bs-original-title="Delete"
                 aria-label="Delete"
             >
-                <i class="las la-trash fs-4"></i>
+                <i class="ki-outline ki-trash fs-4"></i>
             </a>
         @endif
     </div>

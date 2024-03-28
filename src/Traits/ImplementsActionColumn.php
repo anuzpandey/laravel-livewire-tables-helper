@@ -28,7 +28,7 @@ trait ImplementsActionColumn
                         : null;
                     $showTarget = $this->actionColumnAttributes['showTarget'] ?? '_blank';
 
-                    $enablePermission = $this->actionColumnAttributes['enablePermission'] ?? false;
+                    $enablePermission = $this->actionColumnAttributes['enablePermission'] ?? true;
 
                     /**
                      * Prepend Buttons Array Keys:
