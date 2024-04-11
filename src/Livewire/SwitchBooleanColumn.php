@@ -29,6 +29,8 @@ class SwitchBooleanColumn extends Column
 
         $value = $this->getValue($row);
 
+        $this->clickable = false;
+
         return view('livewire-tables-helper::livewire-tables-helper.switch-boolean-column', [
             'row' => $row,
             'columnName' => $this->getFrom(),
