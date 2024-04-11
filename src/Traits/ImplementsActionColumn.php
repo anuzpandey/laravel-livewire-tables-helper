@@ -59,6 +59,7 @@ trait ImplementsActionColumn
 
                     return view('livewire-tables-helper::livewire-tables-helper.action-column', $viewData);
                 })
+                ->unclickable()
                 ->html(),
         ];
     }
