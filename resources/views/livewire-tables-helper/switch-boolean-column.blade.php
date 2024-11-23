@@ -1,5 +1,5 @@
 @php
-    $theme = $component->getTheme();
+    $theme = $this->getTheme();
 @endphp
 
 @if ($theme === 'tailwind')

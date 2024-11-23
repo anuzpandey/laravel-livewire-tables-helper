@@ -124,7 +124,7 @@
     @script
     <script type="text/javascript">
         $(document).ready(() => {
-            let tableName = $('#{{ $column->getComponent()->getTableAttributes()['id'] }}');
+            let tableName = $('#{{ $this->getTableAttributes()['id'] }}');
             tableName.on('click', '#delete-btn', function (event) {
                 event.preventDefault();
                 event.stopPropagation();
